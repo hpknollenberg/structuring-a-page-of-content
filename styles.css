@@ -122,12 +122,12 @@ main {
 }
 
 article {
-    flex: 3;
+    flex: 4;
     border-style: solid;
 }
 
 aside {
-    flex: 2;
+    flex: 3;
     margin-left: 10px;
     padding: 1%;
 }
@@ -140,4 +140,32 @@ aside a {
 
 aside img {
     max-width: 100%;
+}
+
+
+/*Animations*/
+@keyframes colorChange {
+    from {background-color: rgba(255,0,0,0);}
+    to {background-color: rgba(255,0,0,1);}
+}
+
+aside a {
+    position: relative;
+}
+
+aside a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,0,0,0);
+}
+
+aside a:hover::before {
+        animation-name: colorChange;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
 }
