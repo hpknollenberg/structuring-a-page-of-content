@@ -1,0 +1,47 @@
+/*General Setup*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+    background-color: red;
+}
+
+body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+/*Typography*/
+@font-face {
+    font-family: curseOfTheZombie;
+    src: url(fonts/Curse_of_the_Zombie.ttf);
+}
+
+h1, h2 {
+    font-family: curseOfTheZombie;
+    color: black;
+}
+
+@font-face {
+    font-family: whoAsksSatan;
+    src: url(fonts/who\ asks\ satan.ttf);
+}
+
+ul {
+    font-family: whoAsksSatan;
+    color: black;
+}
+
+@font-face {
+    font-family: scaryMovie;
+    src: url(fonts/The\ Scary\ Movie.ttf);
+}
+
+p {
+    font-family: scaryMovie;
+    color: black;
+}
