@@ -5,8 +5,8 @@ html, body {
 }
 
 html {
-    font-size: 20px;
-    background-color: red;
+    font-size: 10px;
+    background-color: black;
 }
 
 body {
@@ -15,7 +15,8 @@ body {
     margin: 0 auto;
 }
 
-/*Typography*/
+
+/*Typography - Font Style*/
 @font-face {
     font-family: curseOfTheZombie;
     src: url(fonts/Curse_of_the_Zombie.ttf);
@@ -31,17 +32,112 @@ h1, h2 {
     src: url(fonts/who\ asks\ satan.ttf);
 }
 
-ul {
+li {
     font-family: whoAsksSatan;
     color: black;
 }
 
-@font-face {
-    font-family: scaryMovie;
-    src: url(fonts/The\ Scary\ Movie.ttf);
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: bold;
+}
+
+
+/*Text Size and Alignment*/
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 2px 2px 10px white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
 }
 
 p {
-    font-family: scaryMovie;
+    text-align: left;
+    font-size: 2rem;
+}
+
+/*Header Layout*/
+
+header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h1 {
+    flex: 5;
+}
+
+header img{
+    display: block;
+    height: 120px;
+    padding-top: 20.15px;
+}
+
+main, header, article, aside, footer {
+    background-color: red;
+    padding: 1%;
+}
+
+nav {
+    background-color: pink;
+    height: 50px;
+    flex: 100%;
+    display: flex; 
+    padding: 1%;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+nav a, nav span {
+    display: inline-block;
+    line-height: 1;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
     color: black;
+}
+
+
+/*Main Layout*/
+
+main {
+    display: flex;
+}
+
+article {
+    flex: 3;
+    border-style: solid;
+}
+
+aside {
+    flex: 2;
+    margin-left: 10px;
+    padding: 1%;
+}
+
+aside a {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+aside img {
+    max-width: 100%;
 }
