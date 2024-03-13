@@ -86,10 +86,12 @@ main, header, article, aside, footer {
 
 nav {
     background-color: pink;
-    height: 50px;
+    height: 30px;
     flex: 100%;
     display: flex; 
     padding: 1%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px maroon;
 }
 
 nav ul {
@@ -107,7 +109,7 @@ nav li {
 
 nav a, nav span {
     display: inline-block;
-    line-height: 1;
+    line-height: 0.25;
     font-size: 3.5rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -123,6 +125,7 @@ main {
 article {
     flex: 4;
     border-style: solid;
+    box-shadow: 5px 5px 5px maroon;
 }
 
 div {
@@ -155,6 +158,7 @@ aside a {
 
 aside img {
     max-width: 100%;
+    display: flex;
 }
 
 
@@ -172,8 +176,6 @@ aside a::before {
     content: "";
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(255,0,0,0);
