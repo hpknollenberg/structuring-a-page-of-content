@@ -67,6 +67,7 @@ header {
     margin-bottom: 10px;
     display: flex;
     flex-flow: row wrap;
+    box-shadow: 5px 5px 25px white, -5px 0px 25px white;
 }
 
 h1 {
@@ -78,6 +79,7 @@ header img{
     height: 120px;
     padding-top: 20.15px;
 }
+
 
 main, header, article, aside, footer {
     background-color: red;
@@ -161,6 +163,10 @@ aside img {
     display: flex;
 }
 
+main, footer {
+    margin-top: 10px;
+    box-shadow: 5px 0px 15px white, -5px 0px 15px white;
+}
 
 /*Animations*/
 @keyframes colorChange {
