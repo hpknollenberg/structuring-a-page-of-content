@@ -32,16 +32,17 @@ h1, h2 {
     src: url(fonts/who\ asks\ satan.ttf);
 }
 
-li {
+ul {
     font-family: whoAsksSatan;
     color: black;
 }
 
-p {
+p, ol {
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-weight: bold;
 }
+
 
 
 /*Text Size and Alignment*/
@@ -56,7 +57,7 @@ h2 {
     font-size: 3rem;
 }
 
-p {
+p, ol {
     text-align: left;
     font-size: 2rem;
 }
